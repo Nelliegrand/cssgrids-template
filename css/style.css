@@ -152,6 +152,64 @@ footer {
 	#container {
 		width: 90%;
 	}
+
+	aside {
+		grid-column-start: 7;
+	grid-column-end: 13;
+
+	}
+
+	main {
+		grid-column-start: 1;
+	grid-column-end: 7;
+	}
+
+	#Box1{
+		grid-column-start: 1;
+		grid-column-end: 5;
+
+	}
+	 #Box2 {
+		grid-column-start: 5;
+		grid-column-end: 9;
+	 }
+	 #Box3 {
+		grid-column-start: 9;
+		grid-column-end: 13;
+	}
+
+	footer {
+		display: grid;
+
+
+	#Footersection1 {
+		grid-column-start: 1;
+	grid-column-end: 7;
+	
+
+	}
+
+	#Footersection2 {
+		grid-column-start: 7;
+	grid-column-end: 13;
+	margin-right: 10px;
+	
+	}
+
+	#Footersection3 {
+		grid-column-start: 1;
+	grid-column-end: 7;
+	margin-left: 10px;
+
+	}
+
+	#Footersection4 {
+		grid-column-start: 7;
+	grid-column-end: 13;
+
+	}
+}
+
 }
 
 /*Mobil*/

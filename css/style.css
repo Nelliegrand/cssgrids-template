@@ -1,0 +1,134 @@
+/** Not allowed to change this initial CSS code **/
+body {
+	background: url(../img/12_col.gif) center top repeat-y;
+	background-size: 90%;
+}
+/*************************************************/
+
+#container {
+	display: grid;
+    width: 89,5%;
+	margin: 20px auto;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: repeat(2, 1fr);
+row-gap: 20px;
+	column-gap: 2%;
+
+}
+
+header,
+section,
+aside,
+main {
+border: solid 1px black;
+margin-bottom: 20px;
+min-height: 150px;
+}
+ 
+header {
+	grid-column-start: 1;
+	grid-column-end: 13;
+}
+
+#Box1 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+#Box2 {
+	grid-column-start: 3;
+	grid-column-end: 11;
+}
+
+#Box3 {
+	grid-column-start: 11;
+	grid-column-end: 13;
+}
+
+aside {
+	grid-column-start: 10;
+	grid-column-end: 13;
+	grid-row-start: 3;
+	grid-row-end: 5;
+}
+
+main {
+	grid-column-start: 1;
+	grid-column-end: 10;
+	grid-row-start: 3;
+	grid-row-end: 5;
+}
+
+footer {
+	grid-column-start: 1;
+	grid-column-end: 13;
+	display: grid;
+	border: solid 1px black;
+	
+
+
+#Footersection1 {
+
+	grid-column-start: 1;
+	grid-column-end: 4;
+	margin-right: 20px;
+	margin-left: 10px;
+	
+}
+
+#Footersection2 {
+
+	grid-column-start: 4;
+	grid-column-end: 7;
+	margin-right: 20px;
+	
+}
+#Footersection3 {
+
+	grid-column-start: 7;
+	grid-column-end: 10;
+	margin-right: 20px;
+	
+}
+#Footersection4 {
+
+	grid-column-start: 10;
+	grid-column-end: 13;
+	margin-right: 10px;
+	
+}
+
+}
+
+/*Stor skärm*/
+
+@media (Max-width: 1300px) {
+	#container {
+		width: 90%;
+	}
+}
+
+/*Liten skärm*/
+
+@media (Max-width: 1200px) {
+	#container {
+		width: 90%;
+	}
+}
+
+/*Tablet*/
+
+@media (Max-width: 960px) {
+	#container {
+		width: 90%;
+	}
+}
+
+/*Mobil*/
+
+@media (Max-width: 768px) {
+	#container {
+		width: 90%;
+	}
+}
+

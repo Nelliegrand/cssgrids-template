@@ -50,6 +50,7 @@ aside {
 	grid-column-end: 13;
 	grid-row-start: 3;
 	grid-row-end: 5;
+	
 }
 
 main {
@@ -113,6 +114,35 @@ footer {
 @media (Max-width: 1200px) {
 	#container {
 		width: 90%;
+	}
+
+	aside {
+		grid-column-start: 9;
+	grid-column-end: 13;
+
+	}
+
+	main {
+		grid-column-start: 1;
+	grid-column-end: 9;
+	}
+
+	#Box1 {
+		grid-column-start: 1;
+		grid-column-end: 4;
+
+	}
+
+	#Box2 {
+		grid-column-start: 4;
+		grid-column-end: 10;
+
+	}
+
+	#Box3 {
+		grid-column-start: 10;
+		grid-column-end: 13;
+
 	}
 }
 

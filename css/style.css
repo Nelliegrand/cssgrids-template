@@ -3,15 +3,16 @@ body {
 	background: url(../img/12_col.gif) center top repeat-y;
 	background-size: 90%;
 }
+
 /*************************************************/
 
 #container {
 	display: grid;
-    width: 89,5%;
+	width: 89, 5%;
 	margin: 20px auto;
-grid-template-columns: repeat(12, 1fr);
-grid-template-rows: repeat(2, 1fr);
-row-gap: 20px;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	row-gap: 20px;
 	column-gap: 2%;
 
 }
@@ -20,11 +21,11 @@ header,
 section,
 aside,
 main {
-border: solid 1px black;
-margin-bottom: 20px;
-min-height: 150px;
+	border: solid 1px black;
+	margin-bottom: 20px;
+	min-height: 150px;
 }
- 
+
 header {
 	grid-column-start: 1;
 	grid-column-end: 13;
@@ -50,7 +51,7 @@ aside {
 	grid-column-end: 13;
 	grid-row-start: 3;
 	grid-row-end: 5;
-	
+
 }
 
 main {
@@ -65,39 +66,41 @@ footer {
 	grid-column-end: 13;
 	display: grid;
 	border: solid 1px black;
-	
 
 
-#Footersection1 {
 
-	grid-column-start: 1;
-	grid-column-end: 4;
-	margin-right: 20px;
-	margin-left: 10px;
-	
-}
+	#Footersection1 {
 
-#Footersection2 {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		margin-right: 20px;
+		margin-left: 10px;
 
-	grid-column-start: 4;
-	grid-column-end: 7;
-	margin-right: 20px;
-	
-}
-#Footersection3 {
+	}
 
-	grid-column-start: 7;
-	grid-column-end: 10;
-	margin-right: 20px;
-	
-}
-#Footersection4 {
+	#Footersection2 {
 
-	grid-column-start: 10;
-	grid-column-end: 13;
-	margin-right: 10px;
-	
-}
+		grid-column-start: 4;
+		grid-column-end: 7;
+		margin-right: 20px;
+
+	}
+
+	#Footersection3 {
+
+		grid-column-start: 7;
+		grid-column-end: 10;
+		margin-right: 20px;
+
+	}
+
+	#Footersection4 {
+
+		grid-column-start: 10;
+		grid-column-end: 13;
+		margin-right: 10px;
+
+	}
 
 }
 
@@ -118,13 +121,13 @@ footer {
 
 	aside {
 		grid-column-start: 9;
-	grid-column-end: 13;
+		grid-column-end: 13;
 
 	}
 
 	main {
 		grid-column-start: 1;
-	grid-column-end: 9;
+		grid-column-end: 9;
 	}
 
 	#Box1 {
@@ -155,25 +158,27 @@ footer {
 
 	aside {
 		grid-column-start: 7;
-	grid-column-end: 13;
+		grid-column-end: 13;
 
 	}
 
 	main {
 		grid-column-start: 1;
-	grid-column-end: 7;
+		grid-column-end: 7;
 	}
 
-	#Box1{
+	#Box1 {
 		grid-column-start: 1;
 		grid-column-end: 5;
 
 	}
-	 #Box2 {
+
+	#Box2 {
 		grid-column-start: 5;
 		grid-column-end: 9;
-	 }
-	 #Box3 {
+	}
+
+	#Box3 {
 		grid-column-start: 9;
 		grid-column-end: 13;
 	}
@@ -182,33 +187,33 @@ footer {
 		display: grid;
 
 
-	#Footersection1 {
-		grid-column-start: 1;
-	grid-column-end: 7;
-	
+		#Footersection1 {
+			grid-column-start: 1;
+			grid-column-end: 7;
 
+
+		}
+
+		#Footersection2 {
+			grid-column-start: 7;
+			grid-column-end: 13;
+			margin-right: 10px;
+
+		}
+
+		#Footersection3 {
+			grid-column-start: 1;
+			grid-column-end: 7;
+			margin-left: 10px;
+
+		}
+
+		#Footersection4 {
+			grid-column-start: 7;
+			grid-column-end: 13;
+
+		}
 	}
-
-	#Footersection2 {
-		grid-column-start: 7;
-	grid-column-end: 13;
-	margin-right: 10px;
-	
-	}
-
-	#Footersection3 {
-		grid-column-start: 1;
-	grid-column-end: 7;
-	margin-left: 10px;
-
-	}
-
-	#Footersection4 {
-		grid-column-start: 7;
-	grid-column-end: 13;
-
-	}
-}
 
 }
 
@@ -218,5 +223,61 @@ footer {
 	#container {
 		width: 90%;
 	}
-}
 
+	header,
+	#Box1,
+	#Box2,
+	#Box3,
+	aside,
+	main {
+		display: grid;
+		grid-column-start: 1;
+		grid-column-end: 13;
+	}
+
+	main {
+		grid-row-start: 5;
+		grid-row-end: 6;
+	}
+
+	aside {
+		grid-row-start: 6;
+		grid-row-end: 7;
+	}
+
+	footer {
+
+		#Footersection1 {
+			grid-column-start: 1;
+			grid-column-end: 13;
+			grid-row-start: 7;
+			grid-row-end: 8;
+			margin-right: 10px;
+		}
+
+		#Footersection2 {
+			grid-column-start: 1;
+			grid-column-end: 13;
+			grid-row-start: 8;
+			grid-row-end: 9;
+			margin-left: 10px;
+		}
+
+		#Footersection3 {
+			grid-column-start: 1;
+			grid-column-end: 13;
+			grid-row-start: 9;
+			grid-row-end: 10;
+			margin-right: 10px;
+		}
+
+		#Footersection4 {
+			grid-column-start: 1;
+			grid-column-end: 13;
+			grid-row-start: 10;
+			grid-row-end: 11;
+			margin-left: 10px;
+		}
+	}
+
+}

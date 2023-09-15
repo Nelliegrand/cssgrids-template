@@ -14,7 +14,6 @@ body {
 	grid-template-rows: repeat(3, 1fr);
 	row-gap: 20px;
 	column-gap: 2%;
-
 }
 
 header,
@@ -66,8 +65,6 @@ footer {
 	grid-column-end: 13;
 	display: grid;
 	border: solid 1px black;
-
-
 
 	#Footersection1 {
 

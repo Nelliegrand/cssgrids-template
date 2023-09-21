@@ -3,6 +3,7 @@ body {
 	background: url(../img/12_col.gif) center top repeat-y;
 	background-size: 90%;
 }
+
 /*************************************************/
 
 #container {
@@ -10,7 +11,6 @@ body {
 	width: 89, 5%;
 	margin: 20px auto;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(3, 1fr);
 	row-gap: 20px;
 	column-gap: 2%;
 }
@@ -277,3 +277,86 @@ footer {
 	}
 
 }
+
+/*Styling with Flexbox*/
+
+/* Big desktop */
+
+
+header {
+	background-color: beige;
+	height: 100px;
+
+}
+
+button {
+	background-color: white;
+	margin-top: 60px;
+	margin-left: 20px;
+}
+
+#button4 {
+	margin-left: auto;
+}
+
+aside {
+	display: flex;
+	flex-direction: column;
+	background-color: beige;
+
+	#sidebutton1,
+	#sidebutton2,
+	#sidebutton3,
+	#sidebutton4 {
+		margin: 10px;
+	}
+}
+
+
+main {
+	background-color: beige;
+	min-height: 200px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#contentsection1 {
+	margin: 10px;
+	width: 240px;
+	flex-grow: 1;
+}
+
+#contentsection2 {
+	margin: 10px;
+	width: 240px;
+	flex-grow: 1;
+}
+
+#contentsection3 {
+	margin: 10px;
+	width: 240px;
+	flex-grow: 1;
+}
+
+#contentsection4 {
+	margin: 10px;
+	width: 240px;
+	flex-grow: 1;
+}
+
+#contentsection5 {
+	margin: 10px;
+	width: 240px;
+	flex-grow: 1;
+}
+
+#contentsection6 {
+	margin: 10px;
+	width: 240px;
+	flex-grow: 1;
+}
+
+/*Small desktop*/
+

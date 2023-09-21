@@ -280,19 +280,22 @@ footer {
 
 /*Styling with Flexbox*/
 
-/* Big desktop */
+/* Big desktop + small desktop + tablet + mobile */
 
 
 header {
 	background-color: beige;
 	height: 100px;
-
+	display: flex;
 }
 
 button {
 	background-color: white;
 	margin-top: 60px;
 	margin-left: 20px;
+	height: 20px;
+	margin-right: 20px;
+	
 }
 
 #button4 {
@@ -358,5 +361,4 @@ main {
 	flex-grow: 1;
 }
 
-/*Small desktop*/
 
